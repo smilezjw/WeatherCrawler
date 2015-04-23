@@ -37,7 +37,7 @@ class WeatherSpider:
     def sendMail(self):
         scheduler.enterabs(self.everyDayRun(8, 5, 0, True), 1, self.sendMail, ())
         user = 'xxxxxx@xxxx.com'
-        pwd = 'xxxxxxxx'
+        pwd = 'xxxxxx'
         to = 'xxxxxx@xxxx.com'
         msg = MIMEText('Good Morning!\r\n' + self.getContents())
         msg['Subject'] = 'Today Weather Forecast'
